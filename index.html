@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>谷雨效果banner图</title>
+	<meta charset="utf-8" />
+
+    <link href="css/guyu_index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="big_banner">
+        <div class="welcome" style="background: url(img/cover.png) center no-repeat;background-size:cover;">
+            <div class="rain" style="background-position: 0px -100px; opacity: 0.7;"></div>
+        </div>
+        <div class="posi_absu">
+            <div class="guyu_logo" style="display: block; top: 80px; width: 200px; background-repeat: no-repeat; background-size: contain;"></div>
+            <div class="tips">
+                <img src="img/mouse1.png">
+                <img src="img/mouse2.png" class="mouse2">
+                <p>下滑</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--<script src="js/slide_guyu_index.js"></script>-->
+<script>
+    //谷雨雨滴
+    $(".guyu_logo").fadeIn(3000);
+    var _h=document.documentElement.clientHeight;
+
+    var times = 0;
+    var rainDom = $(".rain");
+    var raining = setInterval(function(){
+        rainingFn();
+    },170);
+    function rainingFn(){
+        var i = times%4;
+        switch(i){
+            case 0:
+                rainDom.css("background-position","0 0");
+                break;
+            case 1:
+                rainDom.css("background-position","500px 34px");
+                break;
+            case 2:
+                rainDom.css({"background-position":"-545px -77px","opacity":"0.7"});
+                break;
+            case 3:
+                rainDom.css("background-position","0 -100px");
+                break;
+        }
+        times++;
+    }
+</script>

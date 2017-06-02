@@ -1,0 +1,48 @@
+﻿@charset "UTF-8";body,html{width:100%;height:100%;margin:0;padding:0;font-family:"microsoft yahei";background:#fff;left:0;top:0}
+h1,h2,h3,h4,img,ol,ul{margin:0;padding:0;border:none}
+ul li{list-style:none}
+a{text-decoration:none}
+
+.clear{clear:both;}
+.clearfix:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+.clearfix{ display:block;}
+* html .clearfix{ height:1%;}
+
+.big_banner{ position: relative; height:100%;}
+.welcome{position:fixed;top:0;left:0;right:0;width:100%;height:100%;bottom:0;background-size:cover;}
+.posi_absu{position:absolute;top:0;left:0;right:0;width:100%;height:100%;bottom:0;}
+.guyu_logo,.guyu_logo_v{background:url(../img/logo.png);width:242px;height:354px;position:absolute;top:137px;left:50%;margin-left:-121px;display:none;text-align:center}
+.tips{ width:100%; height: 140px; position: absolute; left:0; bottom: 0; text-align: center;}
+.tips p{ color: #ffffff; font-size:18px;}
+
+.rain{width:100%;height:1126px;position:absolute;top:0;left:0;background:url(../img/spritesheet.png) repeat-x}
+.mouse2 {display: block;position: absolute;left: 50%;top: 12px;margin-left: -4px;-webkit-animation:2s mousedrop 0s linear infinite; animation:2s mousedrop 0s linear infinite;}
+
+@-webkit-keyframes mousedrop {
+    0% {
+        top: 12px;
+        opacity: 1;
+    }
+    80%{
+        top: 28px;
+        opacity: 1;
+    }
+    100%{
+        top: 32px;
+        opacity: 0.2;
+    }
+}
+@keyframes mousedrop {
+    0% {
+        top: 12px;
+        opacity: 1;
+    }
+    80%{
+        top: 28px;
+        opacity: 1;
+    }
+    100%{
+        top: 32px;
+        opacity: 0.2;
+    }
+}

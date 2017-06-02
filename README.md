@@ -8,4 +8,5 @@
 <img src="img/guyubanner.gif" />
 <img src="img/guyubanner.png" />
 
-
+ 
+原地址 腾讯：http://gy.qq.com/

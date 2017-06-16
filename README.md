@@ -1,6 +1,8 @@
 # banner-rain-falls
 纯图片+js写的雨滴掉落效果，微复古，可做banner
 
+#如有帮助，谢谢star
+
  
 效果图 ：
 
